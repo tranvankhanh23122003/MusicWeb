@@ -9,6 +9,13 @@
     --foreground: #ededed;
   }
 }
+.container {
+  max-width: 1400px;  /* không vượt quá 1400px */
+  width: 100%;        /* co lại khi màn hình bé */
+  margin: 0 auto;     /* căn giữa màn hình */
+  padding: 0 1rem;    /* cách 2 bên 1 chút */
+  margin-top: 20px;
+}
 
 html,
 body {
@@ -34,6 +41,30 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.layout {
+  display: flex;
+  width: 1400px;      /* toàn bộ layout */
+  margin: 20px auto;  /* căn giữa màn hình, cách top 20px */
+  min-height: 100vh;  /* full chiều cao màn hình */
+  gap: 0;             /* không khoảng cách, dính liền */
+}
+
+.layout-left {
+  width: 70%;         /* cột trái 70% */
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0;   /* bỏ bo tròn */
+}
+
+.layout-right {
+  width: 30%;         /* cột phải 30% */
+  background: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 0;   /* bỏ bo tròn */
+  overflow-y: auto;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

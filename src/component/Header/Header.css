@@ -1,0 +1,83 @@
+/* Header.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem; /* tăng padding để header cao hơn */
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: sans-serif;
+  max-width: 1400px;  /* responsive tốt hơn */
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem;          /* khoảng cách giữa các nhóm lớn */
+}
+
+.logo {
+  font-size: 1.5rem;   
+  font-weight: bold;
+}
+
+.nav {  
+  display: flex;
+  gap: 2rem;          /* các link cách nhau rộng hơn */
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;  /* chữ menu to hơn */
+}
+
+.search {
+  flex: 2;             /* search lớn hơn */
+  margin: 0 2rem;      /* cách 2 bên 1 tí */
+}
+
+.search input {
+  width: 100%;
+  padding: 0.5rem 0.8rem; /* form cao và rộng hơn */
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;          /* khoảng cách giữa các nút và icon rộng hơn */
+}
+
+.btn-pro {
+  background-color: #ff7700;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn-upload {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.avatar {
+  width: 35px;   /* avatar lớn hơn */
+  height: 35px;
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 1.4rem; /* icon to hơn */
+  cursor: pointer;
+}

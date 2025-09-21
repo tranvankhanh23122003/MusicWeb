@@ -1,0 +1,209 @@
+.like-section {
+  margin: 2rem 0;
+}
+
+.like-title {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.like-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.song-card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 200px;
+  min-height: 320px;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+.song-card.active {
+  transform: scale(1.2);
+  z-index: 5;
+}
+
+.song-cover {
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.song-info {
+  margin-top: 0.5rem;
+  flex-grow: 0;
+}
+
+.song-title {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.song-artist {
+  color: #aaa;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.song-card iframe {
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  flex-grow: 1;
+}
+
+.like-wrapper {
+  position: relative;
+}
+
+.like-list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.like-list::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.show {
+  opacity: 1;
+}
+
+.overlay-card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 1400px;
+  height: 1000px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: scale(0.7);
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay.show .overlay-card {
+  transform: scale(1);
+}
+
+.overlay-cover {
+  max-width: 100%;
+  max-height: 600px;
+  border-radius: 12px;
+  object-fit: contain; /* Hiển thị toàn bộ ảnh */
+  margin: auto; /* Căn giữa nếu ảnh nhỏ hơn */
+}
+
+.overlay-info {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.overlay-title {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-artist {
+  color: #aaa;
+  font-size: 2rem;
+}
+
+.overlay-card iframe {
+  margin-top: 2rem;
+  border-radius: 12px;
+  height: 300px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
