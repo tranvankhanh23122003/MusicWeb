@@ -51,7 +51,6 @@ a {
 
 .layout-left {
   width: 70%;         /* cột trái 70% */
-  background: #111;
   color: #fff;
   padding: 1rem;
   border-radius: 0;   /* bỏ bo tròn */
@@ -59,7 +58,6 @@ a {
 
 .layout-right {
   width: 30%;         /* cột phải 30% */
-  background: #1c1c1c;
   padding: 1.5rem;
   border-radius: 0;   /* bỏ bo tròn */
   overflow-y: auto;
