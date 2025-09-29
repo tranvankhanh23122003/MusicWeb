@@ -1,0 +1,256 @@
+/* Reset some basics */
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 100%; 
+  max-width: 400px; 
+  height: auto; 
+  border-radius: 12px;
+  overflow-y: auto;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #888;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.tool-button {
+  background-color: #1f1f1f;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.tool-button:hover {
+  background-color: #2a2a2a;
+  color: #a855f7; /* purple */
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.5);
+}
+
+.tools-note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.highlight {
+  color: #a855f7;
+  font-weight: 700;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.suggestion-item {
+  background-color: #1f1f1f;
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.suggestion-item:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0 6px 15px rgba(168, 85, 247, 0.4);
+}
+
+.artist-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #eee;
+  margin-bottom: 4px;
+}
+
+.artist-followers {
+  font-size: 12px;
+  color: #999;
+}
+
+.follow-button {
+  background-color: #a855f7;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.6);
+}
+
+.follow-button:hover {
+  background-color: #9333ea;
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.8);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.view-all-button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.view-all-button:hover {
+  color: #fff;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.song-item {
+  display: flex;
+  gap: 12px;
+  background-color: #1f1f1f;
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  align-items: center;
+}
+
+.song-item:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0 6px 15px rgba(168, 85, 247, 0.4);
+}
+
+.song-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.song-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.song-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #eee;
+  margin-bottom: 6px;
+}
+
+.song-meta {
+  display: flex;
+  gap: 18px;
+  font-size: 12px;
+  color: #999;
+  align-items: center;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+  stroke-width: 2;
+  stroke: #a855f7;
+}
+
+
+.mobile-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.mobile-badge {
+  height: 40px;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
+  transition: transform 0.3s ease;
+}
+
+.mobile-badge:hover {
+  transform: scale(1.05);
+}
+.tool-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #1f1f1f;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.tool-button:hover {
+  background-color: #2a2a2a;
+  color: #a855f7; /* purple */
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.5);
+}
+
+.tool-icon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.5;
+  stroke: currentColor;
+}

@@ -350,7 +350,7 @@ export default function MusicPlayer() {
                 <iframe
                   ref={formIframeRef}
                   width="100%"
-                  height="166"
+                  height="100%"
                   scrolling="no"
                   frameBorder="no"
                   allow="autoplay"
@@ -365,7 +365,7 @@ export default function MusicPlayer() {
                   alt={songs[playingSong || 0].title}
                   className="form-cover"
                 />
-                <div className="form-progress">
+                {/* <div className="form-progress">
                   <span>{formatTime(currentTime)}</span>
                   <input
                     type="range"
@@ -376,7 +376,7 @@ export default function MusicPlayer() {
                     className="progress-bar"
                   />
                   <span>{formatTime(duration)}</span>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="comment-section">
